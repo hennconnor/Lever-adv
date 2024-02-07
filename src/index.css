@@ -1,3 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    color: white;
+}
+
+.section-1__card {
+    @apply text-center py-10;
+}
+
+.section-1__card-header {
+    @apply text-2xl font-semibold mb-2;
+}

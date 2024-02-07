@@ -1,7 +1,17 @@
+import Hero from "./Components/Hero";
+import NavBar from "./Components/NavBar";
+import InfoSection from "./Components/InfoSection";
+import Footer from './Components/Footer'
+import Products from "./Components/Products";
+
 function App() {
   return (
-    <div className="App">
-      <p className='text-3xl'>Hello World</p>
+    <div className="App font-main">
+      <NavBar />
+      <Hero />
+      <InfoSection />
+      <Products />
+      <Footer />
     </div>
   );
 }
