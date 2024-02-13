@@ -1,13 +1,17 @@
 import React from 'react'
+import Data from '../productData.json'
+import ProductCard from './ProductCard';
 
 const Products = () => {
+
     return (
-        <div className='text-black py-4 bg-slate-100'>
-            <div className='w-5/6 mx-auto'>
-                <h1 className='text-4xl font-semibold'>Our Products</h1>
-            </div >
-        </div >
+        <div>
+            {Data.products.map(product => {
+                <ProductCard product={product} />
+            })}
+        </div>
+
     )
 }
 
-export default Products
+export default Products;

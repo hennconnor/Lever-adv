@@ -1,0 +1,12 @@
+{
+    "products": [
+        {
+            "name": "Montreux Pen",
+            "image": "../Images/ProductImages/Montreux.jpeg"
+        },
+        {
+            "name": "Cinema 500 Pen",
+            "image": "../Images/ProductImages/Montreux.jpeg"
+        }
+    ]
+}
