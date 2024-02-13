@@ -15,10 +15,10 @@ const NavBar = () => {
                 <p className='grow'>Lever Advertising</p>
                 <FontAwesomeIcon icon={faBars} className='md:hidden cursor-pointer' onClick={() => setShow(!show)} />
                 <div className='hidden md:flex justify-between items-center grow'>
-                    <Link to='/'>Home</Link>
-                    <Link to='products'>Products</Link>
-                    <Link to='faq'>FAQ</Link>
-                    <Link to='contact'>Contact</Link>
+                    <Link to='/' className='hover:underline decoration-orange-400 underline-offset-2'>Home</Link>
+                    <Link to='products' className='hover:underline decoration-orange-400 underline-offset-2'>Products</Link>
+                    <Link to='faq' className='hover:underline decoration-orange-400 underline-offset-2'>FAQ</Link>
+                    <Link to='contact' className='hover:underline decoration-orange-400 underline-offset-2'>Contact</Link>
                 </div>
 
 
