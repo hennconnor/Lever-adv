@@ -1,11 +1,11 @@
 import React from 'react'
-import Data from '../productData.json'
+import { products } from '../Products'
 import ProductCard from './ProductCard';
 
 const Products = () => {
     return (
         <div>
-            {Data.products.map(product => {
+            {products.map(product => {
                 return (
                     <ProductCard product={product} key={product.id} />)
             })}

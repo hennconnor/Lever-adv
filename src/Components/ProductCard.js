@@ -1,5 +1,4 @@
 import React from 'react'
-import Montreux from '../Images/ProductImages/Montreux.jpeg';
 
 const ProductCard = ({ product }) => {
     return (
