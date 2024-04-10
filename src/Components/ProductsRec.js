@@ -12,7 +12,7 @@ const ProductsRec = () => {
                     <ProductCard product={products[0]} />
                     <ProductCard product={products[1]} />
                 </div>
-                <Link to='/products' target='_top' className='bg-slate-300 p-3 rounded-full hover:bg-slate-400'>view more</Link>
+                <Link to='products' target='_top' className='bg-slate-300 p-3 rounded-full hover:bg-slate-400'>view more</Link>
             </div>
         </div >
     )
