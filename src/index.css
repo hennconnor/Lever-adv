@@ -27,3 +27,7 @@ body {
 .section-1__card-header {
     @apply text-2xl font-semibold mb-2;
 }
+
+.navbar__link {
+    @apply hover:underline decoration-orange-400 underline-offset-2
+}
