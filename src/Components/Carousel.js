@@ -4,16 +4,18 @@ import CarouselItem from './CarouselItem'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { FaCircle, FaCircleDot } from "react-icons/fa6";
 
-import Image1 from '../Images/pen-image1.jpeg'
-import Image2 from '../Images/pen-image2.jpeg'
-import Image3 from '../Images/pen-image3.jpeg'
+import Image1 from '../Images/Cinema-slide.jpeg'
+import Image2 from '../Images/EasyFlow-slide.jpeg'
+import Image3 from '../Images/Genesis-slide.jpeg'
+import Image4 from '../Images/Montreux-slide.jpeg'
 
 const Carousel = () => {
 
     const [slide, setSlide] = useState(0);
     const products = [{ image: Image1, title: 'Pen 1' },
     { image: Image2, title: 'Pen 2' },
-    { image: Image3, title: 'Pen 3' }]
+    { image: Image3, title: 'Pen 3' },
+    { image: Image4, title: 'Pen 4' }]
 
     const clickLeft = () => {
         setSlide(slide === 0 ? products.length - 1 : slide - 1);
