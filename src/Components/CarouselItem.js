@@ -1,10 +1,11 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const CarouselItem = ({ product, slide, index }) => {
     return (
-        <div className={slide === index ? 'w-full max-w-[700px]' : 'hidden'}>
+        <Link to={product.title} className={slide === index ? 'w-full max-w-[700px]' : 'hidden'}>
             < img src={product.image} alt='pen product' />
-        </div >
+        </Link>
     )
 }
 
