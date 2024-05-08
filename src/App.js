@@ -6,6 +6,7 @@ import ProductsPage from "./Pages/ProductsPage";
 import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
 import Product from "./Pages/Product";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='faq' element={<Faq />} />
         <Route path='contact' element={<Contact />} />
         <Route path='products/:id' element={<Product />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />
     </div>
