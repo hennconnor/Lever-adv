@@ -12,10 +12,10 @@ import Image4 from '../Images/Montreux-slide.jpeg'
 const Carousel = () => {
 
     const [slide, setSlide] = useState(0);
-    const products = [{ image: Image1, title: "Cinema 500 Pen" },
-    { image: Image2, title: "Easy Flow Pen" },
-    { image: Image3, title: "Genesis Pen" },
-    { image: Image4, title: "Montreux Pen" }]
+    const products = [{ id: 2, image: Image1, title: "Cinema 500 Pen" },
+    { id: 4, image: Image2, title: "Easy Flow Pen" },
+    { id: 3, image: Image3, title: "Genesis Pen" },
+    { id: 1, image: Image4, title: "Montreux Pen" }]
 
     const clickLeft = () => {
         setSlide(slide === 0 ? products.length - 1 : slide - 1);

@@ -8,16 +8,18 @@ import Contact from "./Pages/Contact";
 import Product from "./Pages/Product";
 import ErrorPage from "./Pages/ErrorPage";
 
+import { products } from './Products.js'
+
 function App() {
   return (
     <div className="App font-main">
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='products' element={<ProductsPage />} />
+        <Route path='products' element={<ProductsPage products={products} />} />
         <Route path='faq' element={<Faq />} />
         <Route path='contact' element={<Contact />} />
-        <Route path='products/:id' element={<Product />} />
+        <Route path='products/:id' element={<Product products={products} />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />
