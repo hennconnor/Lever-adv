@@ -31,3 +31,7 @@ body {
 .navbar__link {
     @apply hover:underline decoration-orange-400 underline-offset-2
 }
+
+.faq__header {
+    @apply transition duration-500 hover:font-extrabold mb-3 text-lg
+}
