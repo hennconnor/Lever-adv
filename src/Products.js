@@ -10,36 +10,42 @@ export const products = [
         id: 1,
         name: "Montreux Pen",
         image: img1,
-        alt: "Montreux Pen with customized imprint"
+        alt: "Montreux Pen with customized imprint",
+        details: ['Your order will contain 7 sparkling, translucent barrel colors', 'You may order as few as 100 pieces.', 'We print your message in 3 locations, all of which are always in view!', 'Ink refill color is dark blue', 'Generous ink refill writes 1.5 miles!  Your clients are unlikely to ever run out of ink.']
     },
     {
         id: 2,
         name: "Cinema 500 Pen",
         image: img2,
-        alt: "Cinema 500 Pen with customized imprint"
+        alt: "Cinema 500 Pen with customized imprint",
+        details: ['Your price includes imprints on the top of barrel and clip – always in view!', 'Generous ink refill writes 1.5 miles!  Your clients are unlikely to ever run out of ink.', 'Order our assortment of 6 vibrant colors, or pick any individual color! (250 minimum per color)', 'Ink refill color is dark blue']
     },
     {
         id: 3,
         name: "Genesis Pen",
         image: img3,
-        alt: "Genesis Pen with customized imprint"
+        alt: "Genesis Pen with customized imprint",
+        details: ['The barrel is made from 100% recycled product, including discarded PET plastic bottles.', 'Your purchase of this pen helps protect our oceans from the flood of plastic waste.', 'Extra large ink refill delivers up to 3.5 miles of write out – a lifetime supply for most users.', 'We print your message in 3 locations, all of which are always in view.', 'Small minimum order – just 100 pieces']
     },
     {
         id: 4,
         name: "Easy Flow Pen",
         image: img4,
-        alt: "Easy Flow Pen with customized imprint"
+        alt: "Easy Flow Pen with customized imprint",
+        details: ['The easiest writing ballpoint pen ever.  Flows effortlessly!)', 'Generous 1,200 meter ink refill supply', 'Ships in 4 sparkling, translucent barrel colors', '3 imprint areas located where your message is always in sight!']
     },
     {
         id: 5,
         name: "Triple Beam Flatlight",
         image: img5,
-        alt: "Triple Beam Flashlight with customized imprint"
+        alt: "Triple Beam Flashlight with customized imprint",
+        details: ['Long lithium battery life – up to 3 years and batteries replaceable', '3 powerful LED beams throw a generous amount of light to show the way', 'Flat shape can fit in most tight spaces and travels well.', 'Large imprint area to generously highlight your message']
     },
     {
         id: 6,
         name: "Powerstroke Letter Opener",
         image: img6,
-        alt: "Powerstroke Letter Opener with customized imprint"
+        alt: "Powerstroke Letter Opener with customized imprint",
+        details: ['MORE POWER -The long gripping area gives you a powerful base from which to push the blade forward, so you quite naturally apply more force to the task.', 'FAR SAFER TO USE - Our design keeps your hands far away from the cutting process, preventing accidental nicks or those nasty paper cuts!', 'GENEROUS IMPRINT AREA -Your company’s message can contain up to 4 lines of text, or your logo in up to 2 colors.   Your clients will visually connect with you every time they open their mail!']
     }
 ]

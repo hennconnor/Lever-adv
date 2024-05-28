@@ -14,7 +14,7 @@ const Faq = () => {
                 <h1 className='text-5xl font-bold mb-5 decoration-orange-400 underline'>FAQ</h1>
                 <h2 className='text-3xl mb-5 text-gray-600'>Questions come up, Let us answer them</h2>
                 <div className='text-center bg-amber-100 p-5'>
-                    <p className='font-semibold mb-5 text-2xl'>Commonly asked Questions</p>
+                    <p className='font-semibold mb-5 text-3xl'>Commonly asked Questions</p>
                     <div className='cursor-pointer' onClick={() => setq1(!q1)}>
                         <h3 className={q1 ? 'font-extrabold faq__header' : 'font-bold faq__header'}>How to order?</h3>
                         <p className={q1 ? 'block mb-3 leading-relaxed' : 'hidden'}>On the item’s page, simply click the link “Order now” and then fill  out the form that appears. Within 48 hours you will receive an order confirmation that details your order.</p>

@@ -4,13 +4,20 @@ import { useParams } from 'react-router-dom';
 const Product = ({ products }) => {
     const { id } = useParams()
     const current = id - 1;
-    console.log(products[current])
     return (
-        <div className='text-black'>
-            <p>{products[current].name}</p>
-            <img src={products[current].image} alt={products[current].name} />
-            <button>Order Now</button>
-            <button>Order Sample</button>
+        <div className='bg-slate-100 py-10'>
+            <div className='text-black p-5 bg-white w-5/6 mx-auto rounded-md border-solid border-blue-200 border-2 min-w-80'>
+                <h1 className='underline mb-2 font-bold text-lg'>{products[current].name}</h1>
+                <img src={products[current].image} alt={products[current].alt} className='border-2 mb-4' />
+                <h2 className='font-bold border-b-2 my-2 pb-2'>Highlights</h2>
+                <ul className='list-disc my-3 ml-4'>
+                    {products[current].details.map((element) => <li className='my-2 leading-8'>{element}</li>)}
+                </ul>
+                <div className='flex items-center justify-center gap-3'>
+                    <button className='border-2 p-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white'>Order Now</button>
+                    <button className='border-2 p-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white'>Order Sample</button>
+                </div>
+            </div>
         </div>
 
     )
