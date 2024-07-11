@@ -7,6 +7,8 @@ import Faq from "./Pages/Faq";
 import Contact from "./Pages/Contact";
 import Product from "./Pages/Product";
 import ErrorPage from "./Pages/ErrorPage";
+import OrderForm from "./Pages/OrderForm.js";
+import SampleForm from "./Pages/SampleForm.js";
 
 import { products } from './Products.js'
 
@@ -20,6 +22,8 @@ function App() {
         <Route path='faq' element={<Faq />} />
         <Route path='contact' element={<Contact />} />
         <Route path='products/:id' element={<Product products={products} />} />
+        <Route path='products/:id/order' element={<OrderForm />} />
+        <Route path='products/:id/sample' element={<SampleForm />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Product = ({ products }) => {
     const { id } = useParams()
@@ -22,11 +23,11 @@ const Product = ({ products }) => {
                     </ul>
                 </div>
                 <div className='flex items-center justify-center gap-3'>
-                    <button className='border-2 p-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white'>Order Now</button>
-                    <button className='border-2 p-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white'>Order Sample</button>
+                    <Link to={`/products/${id}/order`} className='border-2 p-2 border-red-400 text-red-400 hover:bg-red-400 hover:text-white'>Order Now</Link>
+                    <Link to={`/products/${id}/sample`} className='border-2 p-2 border-green-500 text-green-500 hover:bg-green-500 hover:text-white'>Order Sample</Link>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }
