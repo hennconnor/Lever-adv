@@ -2,7 +2,13 @@ import React from 'react'
 
 const SampleForm = () => {
     return (
-        <div className='text-black'>Hello from sample page</div>
+        <div className='text-black'>
+            <form>
+                <label></label>
+                <input></input>
+                <button>submit</button>
+            </form>
+        </div>
     )
 }
 

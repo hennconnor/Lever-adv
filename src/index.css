@@ -35,3 +35,19 @@ body {
 .faq__header {
     @apply transition duration-500 hover:font-extrabold mb-3 text-lg
 }
+
+.form__input {
+    @apply bg-slate-100 p-1 rounded-md border-slate-400 border-2 focus:outline-none focus:ring-1 focus:ring-slate-400 focus:bg-slate-200
+}
+
+.form__group {
+    @apply grid grid-flow-row gap-1 text-sm justify-items-start
+}
+
+.label__input {
+    @apply grid grid-flow-row gap-1 justify-items-start
+}
+
+.product__section {
+    @apply flex flex-col
+}

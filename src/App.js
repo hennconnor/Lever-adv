@@ -22,8 +22,8 @@ function App() {
         <Route path='faq' element={<Faq />} />
         <Route path='contact' element={<Contact />} />
         <Route path='products/:id' element={<Product products={products} />} />
-        <Route path='products/:id/order' element={<OrderForm />} />
-        <Route path='products/:id/sample' element={<SampleForm />} />
+        <Route path='products/:id/order' element={<OrderForm products={products} />} />
+        <Route path='products/:id/sample' element={<SampleForm products={products} />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>
       <Footer />
