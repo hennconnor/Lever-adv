@@ -32,8 +32,8 @@ const Carousel = () => {
         <div className='my-8'>
             <div className='relative'>
                 {products.map((product, index) => { return <CarouselItem product={product} key={index} slide={slide} index={index} /> })}
-                <button onClick={clickLeft}><FaArrowLeft className='cursor-pointer md:size-9 size-6 bg-slate-600 opacity-70 hover:opacity-100 hover:scale-125 duration-500 absolute top-1/2 left-2' /></button>
-                <button onClick={clickRight}><FaArrowRight className='cursor-pointer bg-slate-600 size-6 md:size-9 opacity-70 hover:opacity-100 hover:scale-125 duration-500 absolute top-1/2 right-2' /></button>
+                <button onClick={clickLeft}><FaArrowLeft className='cursor-pointer md:size-10 size-7 bg-slate-500 opacity-70 hover:opacity-100 hover:scale-125 duration-500 absolute top-1/2 -translate-y-1/2 left-2 p-1 rounded-full' /></button>
+                <button onClick={clickRight}><FaArrowRight className='cursor-pointer bg-slate-500 size-7 md:size-10 opacity-70 hover:opacity-100 hover:scale-125 duration-500 absolute top-1/2 -translate-y-1/2 right-2 p-1 rounded-full' /></button>
             </div>
             {/* <div className='flex justify-around items-center bg-[#0d364f] p-2 border-stone-400 border-solid border-t-2'>
                 <button onClick={clickLeft}><FaArrowLeft className='cursor-pointer size-7 opacity-80 hover:opacity-100 hover:scale-125 duration-500' /></button>
